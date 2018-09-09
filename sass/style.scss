@@ -1,0 +1,166 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none; //    &:link {
+    //        
+    //    }
+    //    &:visited {
+    //        
+    //    }
+    //    &:hover {
+    //        
+    //    }
+    //    &:active {
+    //        
+    //    }
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+section,
+article {
+    margin-bottom: 80px;
+}
+
+body {
+    width: 100%;
+    color: #666;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 2.285rem;
+}
+
+h3 {
+    margin-bottom: 40px;
+    font-size: 1.714rem;
+}
+
+h4 {
+    margin-bottom: 40px;
+    font-size: 1.714rem;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/**login**/
+
+.login-page-body {
+    width: 100%;
+    main {
+        display: flex;
+        justify-content: center;
+        margin: 80px 0;
+        .login-warp {
+            p {
+                a {
+                    color: #0000ff;
+                    &:hover {
+                        color: #0000ff;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            header {
+                text-align: center;
+                a {
+                    color: #666;
+                }
+                p {
+                    a {
+                        color: #0000ff;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .form-warp {
+                margin-bottom: 20px;
+                padding: 40px;
+                background: #ccc;
+                text-align: center;
+                form {
+                    p {
+                        input {
+                            width: 50%;
+                            margin-left: 20px;
+                            padding: 10px;
+                        }
+                        textarea {
+                            min-width: 50%;
+                            min-height: 300px;
+                            max-width: 50%;
+                            max-height: 300px;
+                        }
+                    }
+                    button {
+                        display: block;
+                        margin: 0 auto;
+                        padding: 20px 40px;
+                        &:hover {
+                            color: #0000ff;
+                            cursor: pointer;
+                        }
+                    }
+                    .category {
+                        margin: auto;
+                        width: 50%;
+                        text-align: left;
+                        p {
+                            color: #000;
+                            font-weight: bold;
+                            input {
+                                width: 20px;
+                            }
+                            span {
+                                font-size: 0.714rem;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        padding: 20px 0;
+        background: #666;
+        .footer-nav {
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    padding: 0 20px;
+                    border-left: 1px solid #fff;
+                    color: #fff;
+                    &:last-child {
+                        border-right: 1px solid #fff;
+                    }
+                    a {
+                        color: #fff;
+                        &:hover {
+                            color: #0000ff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
